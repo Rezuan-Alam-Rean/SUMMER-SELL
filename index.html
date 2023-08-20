@@ -42,13 +42,13 @@
 
     <main>
 
-        <section class="main-container  flex " >
+        <section class="main-container flex bg-white " >
 
             <div >
 
                 <div class="kitchenware  flex ">
 
-                    <div class="card w-96 bg-base-100 shadow-xl ">
+                    <div  class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -62,12 +62,10 @@
                               </div>
                           <h2 class="card-title">K. Accessories</h2>
                           <p>39.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl ">
+                    <div  class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -79,14 +77,12 @@
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                               </div>
-                          <h2 class="card-title">K. Accessories</h2>
+                          <h2 class="card-title">K.Accessories set</h2>
                           <p>25.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
                       </div>
-                    <div class="card w-96 bg-base-100 shadow-xl ">
+                    <div  class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -100,9 +96,7 @@
                               </div>
                           <h2 class="card-title">Home Cooker</h2>
                           <p>49.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
 
 
@@ -115,7 +109,7 @@
 
                 <div class="sportswear flex ">
 
-                    <div class="card w-96 bg-base-100 shadow-xl ">
+                    <div class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -129,15 +123,13 @@
                               </div>
                           <h2 class="card-title">Sports Back Cap</h2>
                           <p>49.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
                       </div>
 
 
 
-                      <div class="card w-96 bg-base-100 shadow-xl ">
+                      <div class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -151,15 +143,13 @@
                               </div>
                           <h2 class="card-title">Full Jersey Set</h2>
                           <p>69.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
                       </div>
 
 
 
-                       <div class="card w-96 bg-base-100 shadow-xl ">
+                       <div class="card w-96  shadow-xl ">
                         <figure class="px-10 pt-10">
                           <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -173,9 +163,7 @@
                               </div>
                           <h2 class="card-title">Sports cates</h2>
                           <p>169.00 TK</p>
-                          <div class="card-actions">
-                            
-                          </div>
+                          <button onclick="handleClickCards(this)" class="btn btn-warning">ADD TO CART</button>
                         </div>
                       </div>
 
@@ -197,11 +185,11 @@
 
                     <h3 class="text-black">Have coupon?</h3>
 
-                    <div class=" flex  items-center">
+                    <div class=" flex  items-center ">
                    
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="Coupon code" class="input w-full max-w-xs text-black bg-white" />
     
-                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-secondary ">Secondary</button>
     
                     </div>
                 </div>
@@ -209,12 +197,12 @@
 
 
                 <div class="details-box w-80 ">
-                    <div class="details">
+                    <div id="details" class="details">
 
                     </div>
 
                     <div class="amounts">
-                        <h4>Total price:</h4>
+                        <h4 >Total price: <span id="total"> 00</span></h4>
                         <h4>Discount :</h4>
                         <h4>Total:</h4>
                     </div>
@@ -232,7 +220,7 @@
 
     </main>
 
-
+<script src="./index.js"></script>
 
 </body>
 
