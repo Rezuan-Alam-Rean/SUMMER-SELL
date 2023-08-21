@@ -192,10 +192,10 @@
 
                     <div class=" flex  items-center ">
 
-                        <input  type="text  text-black " placeholder="Coupon code"
+                        <input id="coupon"  type="text  text-black " placeholder="Coupon code"
                             class="input w-full max-w-xs text-black bg-gray-100" />
 
-                        <button class="btn btn-secondary ">Apply</button>
+                        <button  id="apply-btn" onclick="handleDiscount()" class="btn btn-secondary ">Apply</button>
 
                     </div>
                 </div>
@@ -209,8 +209,8 @@
 
                     <div class="amounts mb-5  text-black">
                         <h4>Total price: <span id="total"> 00</span></h4>
-                        <h4>Discount :</h4>
-                        <h4>Total:</h4>
+                        <h4>Discount : <span id="discount"> 00</span></h4>
+                        <h4>Total: <span id="total-price"> 00</span></h4>
                     </div>
 
                     <div class="button-buy">
@@ -225,7 +225,7 @@
                                 <p class="py-4">Your Purchase the product</p>
                                 <div class="modal-action">
                                     
-                                    <button  class="btn  btn-warning text-center items-center justify-center mx-auto ">Go Home</button>
+                                    <button  class="btn  btn-warning text-center items-center justify-center mx-auto "><a href="/">Go Home</a></button>
                                 </div>
                             </form>
                         </dialog>
