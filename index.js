@@ -18,7 +18,7 @@ function handleClickCards(target){
       document.getElementById("total").innerText = total;
 
    
-    console.log(total);
+    // console.log(total);
 
 //   document.getElementById("total").innerText = total;
 
